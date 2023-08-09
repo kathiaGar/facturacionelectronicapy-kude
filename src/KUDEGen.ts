@@ -27,7 +27,6 @@ class KUDEGen {
           const jasperPath = `${__dirname}/DE/`;
 
           const fullCommand = `"${java8Path}" -Dfile.encoding=IBM850 -classpath "${classPath}" -jar "${jarFile}" "${tmpXMLToSign}" "${urlLogo}" "${jasperPath}" "${ambiente}"`;
-          console.log("fullCommand", fullCommand);
 
           exec(
             fullCommand,
